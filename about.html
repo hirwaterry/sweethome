@@ -11,110 +11,109 @@
 
 <body class="bg-gray-50">
 
-    <!-- Navbar -->
-     <!-- Navbar -->
-     <header class="mb-2 px-4 shadow">
+      <!-- Fixed Navbar -->
+      <header class="fixed top-0 left-0 w-full bg-white shadow z-50 px-4">
         <div class="relative mx-auto max-w-screen-lg flex flex-col sm:flex-row sm:items-center sm:justify-between py-4">
-          
-          <!-- Logo Section -->
-          <a class="flex items-center text-2xl font-black" href="/">
-            <span class="mr-2 text-3xl text-red-600">
-              <i class="ri-home-heart-line"></i>
-            </span>
-            <span>Homecare</span>
-          </a>
-      
-          <!-- Hamburger Button for Mobile -->
-          <button
-            id="navbar-toggle"
-            class="absolute right-4 mt-1 text-2xl sm:hidden"
-          >
-            <i class="ri-menu-fill"></i>
-          </button>
-      
-          <!-- Navigation -->
-          <nav
-            id="navbar-menu"
-            class="hidden sm:block w-full sm:w-auto mt-4 sm:mt-0"
-          >
-            <ul class="flex flex-col sm:flex-row gap-y-4 sm:gap-x-8">
-              
-              <!-- Home Link -->
-              <li><a class="text-gray-600 hover:text-blue-600" href="index.html">Home</a></li>
-      
-              <!-- About Link -->
-              <li><a class="text-gray-600 hover:text-blue-600" href="#">About</a></li>
-      
-              <!-- Programs Dropdown -->
-              <li class="relative group z-50 ">
-                <a
-                  class="text-gray-600 hover:text-blue-600 flex items-center cursor-pointer"
-                  href="#"
-                >
-                  Programs <i class="ri-arrow-down-s-line ml-1"></i>
-                </a>
-                <ul
-                  class="absolute left-0 hidden w-64 bg-white shadow-lg rounded-md mt-2 group-hover:block"
-                >
-                  <li>
-                    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                      Developing Self-Help and Self-Care Skills
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                      Building Communication and Social Interaction
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                      Developing Self-Advocacy and Employment Skills
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                      Community Integration Skills
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                      Behavior Management
-                    </a>
-                  </li>
-                  <li>
-                    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
-                      Developing Social and Recreational Skills
-                    </a>
-                  </li>
+
+            <!-- Logo Section -->
+            <a class="flex items-center text-2xl font-black" href="/">
+                <span class="mr-2 text-3xl text-red-600">
+                    <i class="ri-home-heart-line"></i>
+                </span>
+                <span>Homecare</span>
+            </a>
+
+            <!-- Hamburger Button for Mobile -->
+            <button
+                id="navbar-toggle"
+                class="absolute right-4 mt-1 text-2xl sm:hidden"
+            >
+                <i class="ri-menu-fill"></i>
+            </button>
+
+            <!-- Navigation Menu -->
+            <nav
+                id="navbar-menu"
+                class="hidden sm:flex w-full sm:w-auto flex-col sm:flex-row gap-y-4 sm:gap-x-8 mt-4 sm:mt-0"
+            >
+                <ul class="flex flex-col sm:flex-row gap-y-4 sm:gap-x-8">
+
+                    <!-- Home Link -->
+                    <li><a class="text-gray-600 hover:text-blue-600" href="/index.html">Home</a></li>
+
+                    <!-- About Link -->
+                    <li><a class="text-gray-600 hover:text-blue-600" href="about.html">About</a></li>
+
+                    <!-- Programs Dropdown -->
+                    <li class="relative group z-50">
+                        <a
+                            class="text-gray-600 hover:text-blue-600 flex items-center cursor-pointer"
+                            href="#"
+                        >
+                            Programs <i class="ri-arrow-down-s-line ml-1"></i>
+                        </a>
+                        <ul
+                            class="absolute left-0 hidden w-64 bg-white shadow-lg rounded-md mt-2 group-hover:block"
+                        >
+                            <li>
+                                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                    Developing Self-Help and Self-Care Skills
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                    Building Communication and Social Interaction
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                    Developing Self-Advocacy and Employment Skills
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                    Community Integration Skills
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                    Behavior Management
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                                    Developing Social and Recreational Skills
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <!-- Our Story Link -->
+                    <li><a class="text-gray-600 hover:text-blue-600" href="/story.html">Our Story</a></li>
+
+                    <!-- Contact Link -->
+                    <li><a class="text-gray-600 hover:text-blue-600" href="contact.html">Contact</a></li>
+
+                    <!-- Donate Now Button -->
+                    <li class="mt-2 sm:mt-0">
+                        <a href="#" class="text-red-500 hover:text-red-700 font-semibold">
+                            D<i class="ri-heart-add-2-fill"></i>nate Now
+                        </a>
+                    </li>
                 </ul>
-              </li>
-      
-              <!-- Our Story Link -->
-              <li><a class="text-gray-600 hover:text-blue-600" href="/story.html">Our Story</a></li>
-      
-              <!-- Contact Link -->
-              <li><a class="text-gray-600 hover:text-blue-600" href="contact.html">Contact</a></li>
-      
-              <!-- Donate Now Button -->
-              <li class="mt-2 sm:mt-0">
-                <a href="#" class="text-red-500 hover:text-red-700 font-semibold">
-                  D<i class="ri-heart-add-2-fill"></i>nate Now
-                </a>
-              </li>
-            </ul>
-          </nav>
+            </nav>
         </div>
-      </header>
-      
-      <!-- JavaScript for Mobile Toggle -->
-      <script>
+    </header>
+
+    <!-- JavaScript for Mobile Toggle -->
+    <script>
         const toggleButton = document.getElementById('navbar-toggle');
         const menu = document.getElementById('navbar-menu');
-      
+
         toggleButton.addEventListener('click', () => {
-          menu.classList.toggle('hidden');
+            menu.classList.toggle('hidden');
         });
-      </script>
+    </script>
 
     <!-- About Us Section -->
     <section class="py-16 bg-white">
