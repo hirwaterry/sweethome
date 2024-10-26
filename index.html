@@ -149,16 +149,17 @@
       </div>
   </header>
 
-  <!-- JavaScript for Mobile Toggle -->
-  <script>
-      const toggleButton = document.getElementById('navbar-toggle');
-      const menu = document.getElementById('navbar-menu');
+<!-- JavaScript for Mobile Toggle -->
+<script>
+  const toggleButton = document.getElementById('navbar-toggle');
+  const menu = document.getElementById('navbar-menu');
 
-      toggleButton.addEventListener('click', () => {
-          menu.classList.toggle('hidden');
-          menu.classList.toggle('flex');  // Ensure it uses flex layout on toggle
-      });
-  </script>
+  toggleButton.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+      menu.classList.toggle('flex'); // Ensure it uses flex layout on toggle
+  });
+</script>
+
   
 
       <section  class="header__container max-w-container   m-auto py-8 px-4 grid gap-8 text-center md:grid-cols-2 md:items-center md:text-left ">
@@ -244,77 +245,77 @@
 
      <section class="container mx-auto py-12 px-6">
       <div class="flex flex-col lg:flex-row items-center justify-between">
-        
-        <!-- SVG Section -->
-        <div class="lg:w-1/2 mb-10 lg:mb-0">
-          <img 
-            src="./assets/img/undraw_faq_re_31cw.svg" 
-            alt="Cartoon with question mark"
-            class="w-full h-auto max-w-md mx-auto"
-          />
-        </div>
-    
-        <!-- FAQ Section -->
-        <div class="lg:w-1/2">
-          <h2 class="text-3xl font-bold text-gray-800 mb-6">Frequently Asked Questions</h2>
           
-          <div class="space-y-4">
-            <!-- Question 1 -->
-            <div class="border rounded-lg shadow-sm">
-              <button class="w-full px-4 py-3 flex justify-between items-center text-left text-gray-700 hover:text-blue-600 focus:outline-none">
-                <span class="font-medium">What is Homecare?</span>
-                <i class="ri-add-line"></i>
-              </button>
-              <div class="px-4 py-2 hidden">
-                <p class="text-gray-600">Homecare provides support programs for individuals with intellectual and developmental disabilities to help them live independent and meaningful lives.</p>
-              </div>
-            </div>
-    
-            <!-- Question 2 -->
-            <div class="border rounded-lg shadow-sm">
-              <button class="w-full px-4 py-3 flex justify-between items-center text-left text-gray-700 hover:text-blue-600 focus:outline-none">
-                <span class="font-medium">How does Homecare assist individuals?</span>
-                <i class="ri-add-line"></i>
-              </button>
-              <div class="px-4 py-2 hidden">
-                <p class="text-gray-600">We empower individuals by developing self-care, social interaction, community integration, and employment skills through specialized programs.</p>
-              </div>
-            </div>
-    
-            <!-- Question 3 -->
-            <div class="border rounded-lg shadow-sm">
-              <button class="w-full px-4 py-3 flex justify-between items-center text-left text-gray-700 hover:text-blue-600 focus:outline-none">
-                <span class="font-medium">What programs do you offer?</span>
-                <i class="ri-add-line"></i>
-              </button>
-              <div class="px-4 py-2 hidden">
-                <p class="text-gray-600">Our programs include behavior management, community integration, recreational activities, and skill development in advocacy and employment.</p>
-              </div>
-            </div>
-    
-            <!-- Question 4 -->
-            <div class="border rounded-lg shadow-sm">
-              <button class="w-full px-4 py-3 flex justify-between items-center text-left text-gray-700 hover:text-blue-600 focus:outline-none">
-                <span class="font-medium">How can I support or donate to Homecare?</span>
-                <i class="ri-add-line"></i>
-              </button>
-              <div class="px-4 py-2 hidden">
-                <p class="text-gray-600">You can support us by volunteering, participating in community events, or donating through our website to help us continue our mission.</p>
-              </div>
-            </div>
+          <!-- SVG Section -->
+          <div class="lg:w-1/2 mb-10 lg:mb-0">
+              <img 
+                  src="./assets/img/undraw_faq_re_31cw.svg" 
+                  alt="Cartoon with question mark"
+                  class="w-full h-auto max-w-md mx-auto"
+              />
           </div>
-        </div>
+  
+          <!-- FAQ Section -->
+          <div class="lg:w-1/2">
+              <h2 class="text-3xl font-bold text-gray-800 mb-6">Frequently Asked Questions</h2>
+              
+              <div class="space-y-4">
+                  <!-- Question 1 -->
+                  <div class="border rounded-lg shadow-sm">
+                      <button class="faq-toggle-btn w-full px-4 py-3 flex justify-between items-center text-left text-gray-700 hover:text-blue-600 focus:outline-none">
+                          <span class="font-medium">What is Homecare?</span>
+                          <i class="ri-add-line"></i>
+                      </button>
+                      <div class="px-4 py-2 hidden">
+                          <p class="text-gray-600">
+                              Homecare provides support programs for individuals with intellectual and developmental disabilities to help them live independent and meaningful lives.
+                          </p>
+                      </div>
+                  </div>
+  
+                  <!-- Question 2 -->
+                  <div class="border rounded-lg shadow-sm">
+                      <button class="faq-toggle-btn w-full px-4 py-3 flex justify-between items-center text-left text-gray-700 hover:text-blue-600 focus:outline-none">
+                          <span class="font-medium">How does Homecare assist individuals?</span>
+                          <i class="ri-add-line"></i>
+                      </button>
+                      <div class="px-4 py-2 hidden">
+                          <p class="text-gray-600">
+                              We empower individuals by developing self-care, social interaction, community integration, and employment skills through specialized programs.
+                          </p>
+                      </div>
+                  </div>
+  
+                  <!-- Question 3 -->
+                  <div class="border rounded-lg shadow-sm">
+                      <button class="faq-toggle-btn w-full px-4 py-3 flex justify-between items-center text-left text-gray-700 hover:text-blue-600 focus:outline-none">
+                          <span class="font-medium">What programs do you offer?</span>
+                          <i class="ri-add-line"></i>
+                      </button>
+                      <div class="px-4 py-2 hidden">
+                          <p class="text-gray-600">
+                              Our programs include behavior management, community integration, recreational activities, and skill development in advocacy and employment.
+                          </p>
+                      </div>
+                  </div>
+  
+                  <!-- Question 4 -->
+                  <div class="border rounded-lg shadow-sm">
+                      <button class="faq-toggle-btn w-full px-4 py-3 flex justify-between items-center text-left text-gray-700 hover:text-blue-600 focus:outline-none">
+                          <span class="font-medium">How can I support or donate to Homecare?</span>
+                          <i class="ri-add-line"></i>
+                      </button>
+                      <div class="px-4 py-2 hidden">
+                          <p class="text-gray-600">
+                              You can support us by volunteering, participating in community events, or donating through our website to help us continue our mission.
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
-    </section>
-
-    
-
-      
-
-      
-    
-
-
+  </section> 
+     
 <!--Footer-->
 
 <footer class="bg-gray-900 text-white pt-5 pb-4">
@@ -398,14 +399,11 @@
     <script src="https://unpkg.com/scrollreveal"></script>
     <script src="main.js"></script>
     <!-- Add some interactivity for the FAQ accordion -->
-<script>
-  document.querySelectorAll('button').forEach(button => {
-    button.addEventListener('click', () => {
-      const answer = button.nextElementSibling;
-      answer.classList.toggle('hidden');
-    });
-  });
-</script>
+
+<!-- External JavaScript for FAQ -->
+<script src="./faq.js"></script>
+
+
    
 </body>
 </html>
