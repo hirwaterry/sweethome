@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Sweet Home Care</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.min.css">
+</head>
+
+<body class="bg-gray-50">
+
+    <!-- Navbar -->
+     <!-- Navbar -->
+     <header class="mb-2 px-4 shadow">
+        <div class="relative mx-auto max-w-screen-lg flex flex-col sm:flex-row sm:items-center sm:justify-between py-4">
+          
+          <!-- Logo Section -->
+          <a class="flex items-center text-2xl font-black" href="/">
+            <span class="mr-2 text-3xl text-red-600">
+              <i class="ri-home-heart-line"></i>
+            </span>
+            <span>Homecare</span>
+          </a>
+      
+          <!-- Hamburger Button for Mobile -->
+          <button
+            id="navbar-toggle"
+            class="absolute right-4 mt-1 text-2xl sm:hidden"
+          >
+            <i class="ri-menu-fill"></i>
+          </button>
+      
+          <!-- Navigation -->
+          <nav
+            id="navbar-menu"
+            class="hidden sm:block w-full sm:w-auto mt-4 sm:mt-0"
+          >
+            <ul class="flex flex-col sm:flex-row gap-y-4 sm:gap-x-8">
+              
+              <!-- Home Link -->
+              <li><a class="text-gray-600 hover:text-blue-600" href="index.html">Home</a></li>
+      
+              <!-- About Link -->
+              <li><a class="text-gray-600 hover:text-blue-600" href="#">About</a></li>
+      
+              <!-- Programs Dropdown -->
+              <li class="relative group z-50 ">
+                <a
+                  class="text-gray-600 hover:text-blue-600 flex items-center cursor-pointer"
+                  href="#"
+                >
+                  Programs <i class="ri-arrow-down-s-line ml-1"></i>
+                </a>
+                <ul
+                  class="absolute left-0 hidden w-64 bg-white shadow-lg rounded-md mt-2 group-hover:block"
+                >
+                  <li>
+                    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                      Developing Self-Help and Self-Care Skills
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                      Building Communication and Social Interaction
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                      Developing Self-Advocacy and Employment Skills
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                      Community Integration Skills
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                      Behavior Management
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                      Developing Social and Recreational Skills
+                    </a>
+                  </li>
+                </ul>
+              </li>
+      
+              <!-- Our Story Link -->
+              <li><a class="text-gray-600 hover:text-blue-600" href="/story.html">Our Story</a></li>
+      
+              <!-- Contact Link -->
+              <li><a class="text-gray-600 hover:text-blue-600" href="contact.html">Contact</a></li>
+      
+              <!-- Donate Now Button -->
+              <li class="mt-2 sm:mt-0">
+                <a href="#" class="text-red-500 hover:text-red-700 font-semibold">
+                  D<i class="ri-heart-add-2-fill"></i>nate Now
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+      
+      <!-- JavaScript for Mobile Toggle -->
+      <script>
+        const toggleButton = document.getElementById('navbar-toggle');
+        const menu = document.getElementById('navbar-menu');
+      
+        toggleButton.addEventListener('click', () => {
+          menu.classList.toggle('hidden');
+        });
+      </script>
+
+    <!-- About Us Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto max-w-screen-lg px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+
+                <!-- Left Content (Text) -->
+                <div class="space-y-6" data-sr="fade-right">
+                    <h1 class="text-4xl font-extrabold text-gray-800 leading-snug">
+                        About Us
+                    </h1>
+                    <p class="text-lg text-gray-600">
+                        At Sweet Home Care, we are dedicated to empowering adults with intellectual 
+                        and developmental disabilities, helping them achieve their fullest potential.
+                    </p>
+                    <p class="text-lg text-gray-600">
+                        Our approach is grounded in the principles of normalization, community integration, 
+                        and self-empowerment. By fostering engagement through community activities, we ensure 
+                        that individuals are active participants in society.
+                    </p>
+                    <p class="text-lg text-gray-600">
+                        All of our residential and day programs are designed with these values at the core, 
+                        creating supportive environments where everyone can thrive and lead fulfilling lives.
+                    </p>
+
+                    <div class="mt-4">
+                        <a href="#" class="px-6 py-2 text-white bg-blue-600 hover:bg-blue-700 rounded-lg shadow-md">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Right Content (SVG Image) -->
+                <div class="relative" data-sr="fade-left">
+                    <img src="/assets/img/pabout.svg" 
+                         alt="Community SVG" class="rounded-lg shadow-md">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Core Values Section -->
+    <section class="bg-gray-100 py-16">
+        <div class="container mx-auto max-w-screen-lg px-6">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-8" data-sr="fade-up">
+                Our Core Values
+            </h2>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Value 1 -->
+                <div class="p-6 bg-white shadow-lg rounded-lg" data-sr="float-in">
+                    <i class="ri-heart-line text-red-500 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Empowerment</h3>
+                    <p class="text-gray-600">
+                        We empower individuals to reach their highest potential by fostering independence and confidence.
+                    </p>
+                </div>
+
+                <!-- Value 2 -->
+                <div class="p-6 bg-white shadow-lg rounded-lg" data-sr="float-in">
+                    <i class="ri-community-line text-blue-500 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Community Integration</h3>
+                    <p class="text-gray-600">
+                        We promote meaningful participation in community life, ensuring everyone is valued and included.
+                    </p>
+                </div>
+
+                <!-- Value 3 -->
+                <div class="p-6 bg-white shadow-lg rounded-lg" data-sr="float-in">
+                    <i class="ri-user-smile-line text-green-500 text-4xl mb-4"></i>
+                    <h3 class="text-xl font-bold mb-2">Normalization</h3>
+                    <p class="text-gray-600">
+                        Our programs ensure individuals live in environments that reflect everyday life in the community.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white pt-5 pb-4">
+        <div class="container mx-auto text-center md:text-left">
+          <div class="flex flex-wrap">
+            <!-- Company Info -->
+            <div class="w-full md:w-1/4 px-4 mt-3">
+              <h5 class="uppercase mb-4 font-bold">Homecare</h5>
+              <p>We provide comprehensive care programs that promote independence and well-being for all individuals. Join us in making a difference!</p>
+            </div>
+      
+            <!-- Useful Links -->
+            <div class="w-full md:w-1/4 px-4 mt-3">
+              <h5 class="uppercase mb-4 font-bold">Useful Links</h5>
+              <ul>
+                <li><a href="#" class="text-white hover:text-yellow-300"><i class="ri-home-heart-fill"></i> Home</a></li>
+                <li><a href="#" class="text-white hover:text-yellow-300"><i class="ri-information-2-fill"></i> About Us</a></li>
+                <li><a href="#" class="text-white hover:text-yellow-300"><i class="ri-service-fill"></i> Programs</a></li>
+                <li><a href="#" class="text-white hover:text-yellow-300"><i class="ri-phone-fill"></i> Contact</a></li>
+              </ul>
+            </div>
+      
+            <!-- Social Media -->
+            <div class="w-full md:w-1/4 px-4 mt-3">
+              <h5 class="uppercase mb-4 font-bold">Follow Us</h5>
+              <div class="space-x-4">
+                <a href="#" class="text-blue-600"><i class="ri-facebook-fill text-2xl"></i></a>
+                <a href="#" class="text-blue-400"><i class="ri-twitter-fill text-2xl"></i></a>
+                <a href="#" class="text-red-600"><i class="ri-google-fill text-2xl"></i></a>
+                <a href="#" class="text-pink-500"><i class="ri-instagram-fill text-2xl"></i></a>
+                <a href="#" class="text-blue-500"><i class="ri-linkedin-fill text-2xl"></i></a>
+              </div>
+              <div class="mt-4">
+                <a href="donate.php" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-700">
+                  D<i class="ri-heart-add-2-fill"></i>nate Here
+                </a>
+              </div>
+            </div>
+      
+            <!-- Contact Info -->
+            <div class="w-full md:w-1/4 px-4 mt-3">
+              <h5 class="uppercase mb-4 font-bold">Contact</h5>
+              <p><i class="fas fa-home mr-2"></i> 3597 E MONARCH SKY Ln #269</p>
+              <p><i class="fas fa-envelope mr-2"></i> Joseendayisenga@gmail.com</p>
+              <p><i class="fas fa-phone mr-2"></i> 208 2840251</p>
+              <p><i class="fas fa-print mr-2"></i> MERIDIAN, IDAHO 83642</p>
+            </div>
+          </div>
+      
+          <hr class="my-4 border-gray-700">
+      
+          <!-- Copyright Info -->
+          <div class="flex flex-col md:flex-row items-center justify-between">
+            <div class="text-center md:text-left">
+              <p>© 2024 All Rights Reserved by <strong>Homecare</strong></p>
+            </div>
+            <div class="text-center">
+              <a href="#"><img src="" alt="Logo" class="w-24 mx-auto md:mx-0"></a>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    <script>
+        // Toggle Navbar for Mobile
+        const menuToggle = document.getElementById('menuToggle');
+        const navbar = document.getElementById('navbar');
+        menuToggle.addEventListener('click', () => {
+            navbar.classList.toggle('hidden');
+        });
+
+        // ScrollReveal Animations
+        ScrollReveal().reveal('[data-sr="fade-right"]', {
+            origin: 'left',
+            distance: '50px',
+            duration: 1000,
+            reset: true,
+        });
+
+        ScrollReveal().reveal('[data-sr="fade-left"]', {
+            origin: 'right',
+            distance: '50px',
+            duration: 1000,
+            reset: true,
+        });
+
+        ScrollReveal().reveal('[data-sr="fade-up"]', {
+            origin: 'bottom',
+            distance: '30px',
+            duration: 800,
+            reset: true,
+        });
+
+        ScrollReveal().reveal('[data-sr="float-in"]', {
+            distance: '20px',
+            duration: 900,
+            easing: 'ease-in-out',
+            reset: true,
+        });
+    </script>
+
+</body>
+</html>

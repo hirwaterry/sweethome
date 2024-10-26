@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Home Care</title>
+<!--Css -->
+<link rel="stylesheet" href="dist/output.css" /> 
+
+<!--icon -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.4.0/fonts/remixicon.min.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+<!--swiper-->
+<link rel="stylesheet" href="css/swiper-bundle.min.css" />
+<!--land page-->
+<link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>E-Learning</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#6eb0ec',
+              textDark: '#111827',
+              textLight: '#6b7280',
+              white: '#ffffff',
+              bgc: '#efeaee',
+            },
+            fontFamily: {
+              rale: ['Raleway', 'sans-serif'],
+            },
+            maxWidth: {
+              container: '1200px',
+            },
+            gridTemplateAreas: {
+              header: ['header header'],
+              main: ['main main'],
+              footer: ['footer footer'],
+            }
+          },
+        },
+      }
+    </script>
+</head>
+<body class="bg-white"> 
+  <header class="mb-2 px-4 shadow">
+    <div class="relative mx-auto max-w-screen-lg flex flex-col sm:flex-row sm:items-center sm:justify-between py-4">
+      
+      <!-- Logo Section -->
+      <a class="flex items-center text-2xl font-black" href="/">
+        <span class="mr-2 text-3xl text-red-600">
+          <i class="ri-home-heart-line"></i>
+        </span>
+        <span>Homecare</span>
+      </a>
+  
+      <!-- Hamburger Button for Mobile -->
+      <button
+        id="navbar-toggle"
+        class="absolute right-4 mt-1 text-2xl sm:hidden"
+      >
+        <i class="ri-menu-fill"></i>
+      </button>
+  
+      <!-- Navigation -->
+      <nav
+        id="navbar-menu"
+        class="hidden sm:block w-full sm:w-auto mt-4 sm:mt-0"
+      >
+        <ul class="flex flex-col sm:flex-row gap-y-4 sm:gap-x-8">
+          
+          <!-- Home Link -->
+          <li><a class="text-gray-600 hover:text-blue-600" href="#">Home</a></li>
+  
+          <!-- About Link -->
+          <li><a class="text-gray-600 hover:text-blue-600" href="about.html">About</a></li>
+  
+          <!-- Programs Dropdown -->
+          <li class="relative group z-50 ">
+            <a
+              class="text-gray-600 hover:text-blue-600 flex items-center cursor-pointer"
+              href="#"
+            >
+              Programs <i class="ri-arrow-down-s-line ml-1"></i>
+            </a>
+            <ul
+              class="absolute left-0 hidden w-64 bg-white shadow-lg rounded-md mt-2 group-hover:block"
+            >
+              <li>
+                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                  Developing Self-Help and Self-Care Skills
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                  Building Communication and Social Interaction
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                  Developing Self-Advocacy and Employment Skills
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                  Community Integration Skills
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                  Behavior Management
+                </a>
+              </li>
+              <li>
+                <a href="#" class="block px-4 py-2 text-gray-700 hover:bg-gray-100">
+                  Developing Social and Recreational Skills
+                </a>
+              </li>
+            </ul>
+          </li>
+  
+          <!-- Our Story Link -->
+          <li><a class="text-gray-600 hover:text-blue-600" href="/story.html">Our Story</a></li>
+  
+          <!-- Contact Link -->
+          <li><a class="text-gray-600 hover:text-blue-600" href="contact.html">Contact</a></li>
+  
+          <!-- Donate Now Button -->
+          <li class="mt-2 sm:mt-0">
+            <a href="#" class="text-red-500 hover:text-red-700 font-semibold">
+              D<i class="ri-heart-add-2-fill"></i>nate Now
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- JavaScript for Mobile Toggle -->
+  <script>
+    const toggleButton = document.getElementById('navbar-toggle');
+    const menu = document.getElementById('navbar-menu');
+  
+    toggleButton.addEventListener('click', () => {
+      menu.classList.toggle('hidden');
+    });
+  </script>
+  
+
+      <section  class="header__container max-w-container m-auto py-8 px-4 grid gap-8 text-center md:grid-cols-2 md:items-center md:text-left ">
+        <div class="header__image md:order-2">
+          <img src="assets/img/owner.jpg" alt="header" class="flex rounded-2xl w-full"/>
+        </div>
+        <div class="header__content">
+          <h1 class="mb-4 text-6xl  font-semibold leading-20 text-textDark">Welcome to <br> <span class="text-primary">Sweet Home Care.</span></h1>
+          <p class="mb-2 font-medium text-sm leading-7 ">
+            At Sweet Home Care, we create nurturing environments where every individual can thrive.
+            Together, we build a brighter future through community, care, and compassion.
+          </p> <br>
+
+          <!--Qoutes home page-->
+          <div class="bg-white p-6 rounded-lg shadow-md mb-4  mx-auto max-w-3xl">
+            <blockquote class="text-xl italic text-gray-700 text-center">
+                <p>
+                    "The greatness of a community is most accurately measured by the compassionate actions of its members."
+                </p>
+                <footer class="mt-4 text-gray-500">
+                    – <span class="font-semibold">Coretta Scott King</span>
+                </footer>
+            </blockquote>
+        
+            <div class="mt-6 text-center text-gray-700">
+                <span class="block font-bold">Founders:</span>
+                <p class="mt-1">Josee & Martin Mpoyo</p>
+            </div>
+        </div>
+        
+        <!-- search form-->
+          <form action="/" class=" flex items-center justify-between flex-col gap-y-4 gap-x-0  bg-gray-50 rounded-lg lg:flex-row">
+            <div class="input__row p-4 flex items-center gap-4 flex-1  ">
+              <div class="input__group flex items-center gap-2 ">
+                <span class="text-textDark"><i class="ri-search-line"></i></span>
+                <input type="text" placeholder="Search for program" class="w-full outline-none border-none text-base bg-transparent" />
+              </div>
+
+            </div>
+            <button type="submit" class="w-full py-4 px-8 outline-none border-none text-base whitespace-nowrap text-white bg-primary rounded-lg cursor-pointer lg:w-fit">Search Now</button>
+          </form>
+        </div>
+      </section >
+
+      <!--About us -->
+      <section class="bg-gradient-to-r from-blue-50 via-white to-blue-50 py-16 px-8 xl:py-24">
+        <div class="container mx-auto flex flex-col xl:flex-row items-center justify-between">
+            <!-- Text Content -->
+            <div class="xl:w-1/2 text-center xl:text-left space-y-6">
+                
+    
+                <h1 class="text-4xl sm:text-5xl font-semibold leading-tight tracking-tight text-gray-800">
+                    Empowering Lives, <br> One Step at a Time
+                </h1>
+    
+                <p class="mt-4 text-lg text-gray-600 leading-relaxed">
+                    At Sweet Home Care, we are dedicated to empowering adults with intellectual and developmental disabilities, helping them achieve their fullest potential. Our approach is grounded in the principles of normalization, community integration, and self-empowerment. 
+                </p>
+    
+                <p class="mt-4 text-lg text-gray-600 leading-relaxed">
+                    By fostering engagement through community activities, we ensure that individuals are active participants in society. All of our residential and day programs are designed with these values at the core, creating supportive environments where everyone can thrive and lead fulfilling lives.
+                </p>
+    
+                <!-- Buttons -->
+                <div class="mt-6 flex flex-col sm:flex-row justify-center xl:justify-start space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="contact.html" class="px-6 py-3 text-white bg-blue-600 rounded-lg shadow hover:bg-blue-700 transition">
+                        Contact Us
+                    </a>
+                    <a href="#" class="px-6 py-3 text-blue-600 border border-blue-600 rounded-lg hover:bg-blue-50 transition">
+                        Our Programs
+                    </a>
+                </div>
+            </div>
+    
+            <!-- SVG Section -->
+            <div class="mt-10 xl:mt-0 xl:w-1/2 max-w-lg mx-auto xl:max-w-none">
+             <img src="/assets/img/about/about.svg" alt="">
+              </div>
+
+        </div>
+    </section>
+     <!--About us End-->    
+
+     <section class="container mx-auto py-12 px-6">
+      <div class="flex flex-col lg:flex-row items-center justify-between">
+        
+        <!-- SVG Section -->
+        <div class="lg:w-1/2 mb-10 lg:mb-0">
+          <img 
+            src="./assets/img/undraw_faq_re_31cw.svg" 
+            alt="Cartoon with question mark"
+            class="w-full h-auto max-w-md mx-auto"
+          />
+        </div>
+    
+        <!-- FAQ Section -->
+        <div class="lg:w-1/2">
+          <h2 class="text-3xl font-bold text-gray-800 mb-6">Frequently Asked Questions</h2>
+          
+          <div class="space-y-4">
+            <!-- Question 1 -->
+            <div class="border rounded-lg shadow-sm">
+              <button class="w-full px-4 py-3 flex justify-between items-center text-left text-gray-700 hover:text-blue-600 focus:outline-none">
+                <span class="font-medium">What is Homecare?</span>
+                <i class="ri-add-line"></i>
+              </button>
+              <div class="px-4 py-2 hidden">
+                <p class="text-gray-600">Homecare provides support programs for individuals with intellectual and developmental disabilities to help them live independent and meaningful lives.</p>
+              </div>
+            </div>
+    
+            <!-- Question 2 -->
+            <div class="border rounded-lg shadow-sm">
+              <button class="w-full px-4 py-3 flex justify-between items-center text-left text-gray-700 hover:text-blue-600 focus:outline-none">
+                <span class="font-medium">How does Homecare assist individuals?</span>
+                <i class="ri-add-line"></i>
+              </button>
+              <div class="px-4 py-2 hidden">
+                <p class="text-gray-600">We empower individuals by developing self-care, social interaction, community integration, and employment skills through specialized programs.</p>
+              </div>
+            </div>
+    
+            <!-- Question 3 -->
+            <div class="border rounded-lg shadow-sm">
+              <button class="w-full px-4 py-3 flex justify-between items-center text-left text-gray-700 hover:text-blue-600 focus:outline-none">
+                <span class="font-medium">What programs do you offer?</span>
+                <i class="ri-add-line"></i>
+              </button>
+              <div class="px-4 py-2 hidden">
+                <p class="text-gray-600">Our programs include behavior management, community integration, recreational activities, and skill development in advocacy and employment.</p>
+              </div>
+            </div>
+    
+            <!-- Question 4 -->
+            <div class="border rounded-lg shadow-sm">
+              <button class="w-full px-4 py-3 flex justify-between items-center text-left text-gray-700 hover:text-blue-600 focus:outline-none">
+                <span class="font-medium">How can I support or donate to Homecare?</span>
+                <i class="ri-add-line"></i>
+              </button>
+              <div class="px-4 py-2 hidden">
+                <p class="text-gray-600">You can support us by volunteering, participating in community events, or donating through our website to help us continue our mission.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    
+
+      
+
+      
+    
+
+
+<!--Footer-->
+
+<footer class="bg-gray-900 text-white pt-5 pb-4">
+  <div class="container mx-auto text-center md:text-left">
+    <div class="flex flex-wrap">
+      <!-- Company Info -->
+      <div class="w-full md:w-1/4 px-4 mt-3">
+        <h5 class="uppercase mb-4 font-bold">Homecare</h5>
+        <p>We provide comprehensive care programs that promote independence and well-being for all individuals. Join us in making a difference!</p>
+      </div>
+
+      <!-- Useful Links -->
+      <div class="w-full md:w-1/4 px-4 mt-3">
+        <h5 class="uppercase mb-4 font-bold">Useful Links</h5>
+        <ul>
+          <li><a href="#" class="text-white hover:text-yellow-300"><i class="ri-home-heart-fill"></i> Home</a></li>
+          <li><a href="#" class="text-white hover:text-yellow-300"><i class="ri-information-2-fill"></i> About Us</a></li>
+          <li><a href="#" class="text-white hover:text-yellow-300"><i class="ri-service-fill"></i> Programs</a></li>
+          <li><a href="#" class="text-white hover:text-yellow-300"><i class="ri-phone-fill"></i> Contact</a></li>
+        </ul>
+      </div>
+
+      <!-- Social Media -->
+      <div class="w-full md:w-1/4 px-4 mt-3">
+        <h5 class="uppercase mb-4 font-bold">Follow Us</h5>
+        <div class="space-x-4">
+          <a href="#" class="text-blue-600"><i class="ri-facebook-fill text-2xl"></i></a>
+          <a href="#" class="text-blue-400"><i class="ri-twitter-fill text-2xl"></i></a>
+          <a href="#" class="text-red-600"><i class="ri-google-fill text-2xl"></i></a>
+          <a href="#" class="text-pink-500"><i class="ri-instagram-fill text-2xl"></i></a>
+          <a href="#" class="text-blue-500"><i class="ri-linkedin-fill text-2xl"></i></a>
+        </div>
+        <div class="mt-4">
+          <a href="donate.php" class="bg-red-500 text-white px-4 py-2 rounded hover:bg-red-700">
+            D<i class="ri-heart-add-2-fill"></i>nate Here
+          </a>
+        </div>
+      </div>
+
+      <!-- Contact Info -->
+      <div class="w-full md:w-1/4 px-4 mt-3">
+        <h5 class="uppercase mb-4 font-bold">Contact</h5>
+        <p><i class="fas fa-home mr-2"></i> 3597 E MONARCH SKY Ln #269</p>
+        <p><i class="fas fa-envelope mr-2"></i> Joseendayisenga@gmail.com</p>
+        <p><i class="fas fa-phone mr-2"></i> 208 2840251</p>
+        <p><i class="fas fa-print mr-2"></i> MERIDIAN, IDAHO 83642</p>
+      </div>
+    </div>
+
+    <hr class="my-4 border-gray-700">
+
+    <!-- Copyright Info -->
+    <div class="flex flex-col md:flex-row items-center justify-between">
+      <div class="text-center md:text-left">
+        <p>© 2024 All Rights Reserved by <strong>Homecare</strong></p>
+      </div>
+      <div class="text-center">
+        <a href="#"><img src="" alt="Logo" class="w-24 mx-auto md:mx-0"></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Include Font Awesome -->
+<script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+<!--Footer End-->
+
+
+
+
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/scrollreveal.min.js"></script>
+    <script src="./tailwind.js"></script>
+    <!--landpage body-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="main.js"></script>
+    <!-- Add some interactivity for the FAQ accordion -->
+<script>
+  document.querySelectorAll('button').forEach(button => {
+    button.addEventListener('click', () => {
+      const answer = button.nextElementSibling;
+      answer.classList.toggle('hidden');
+    });
+  });
+</script>
+   
+</body>
+</html>
